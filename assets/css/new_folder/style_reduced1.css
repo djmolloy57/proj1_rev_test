@@ -464,16 +464,8 @@ form label {
 /* Media query Iphone 6/7/8 view  */
 @media screen and (min-width: 375px) and (max-width: 667px){
     
-  nav{
-     max-height: 40px !important;
-      height: 40px !important;
-  }
+ 
    
-  .bio{
-    margin-top: 1px !important;
-  }
-
-    
   label.logo{
     color: black;
     font-size: 20px;
@@ -563,7 +555,7 @@ form label {
      background-color: grey;
      margin-bottom: 2px;
      max-height: 300px;
-     height: 40px;
+     height: 30px;
      width: 100%;
      position: fixed;
      left: 0;
