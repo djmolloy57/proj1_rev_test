@@ -586,11 +586,10 @@ form label {
     #menu{
       margin-right: 0;
     }
-
-
+      
     nav ul {
 
-      float: right;
+      text-align: right;
       display: inline-block;
     }
 
