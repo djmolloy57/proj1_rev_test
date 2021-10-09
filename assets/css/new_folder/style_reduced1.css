@@ -583,6 +583,9 @@ form label {
         width: 100px;
         font-size: 80%;
     }
+    #menu{
+      margin-right: 0;
+    }
 
 
     nav ul {
