@@ -1,0 +1,394 @@
+/*Mobile first and then use Media Query for larger screens like tablet and desktops */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border:0;
+}
+body {
+    background-color: grey;
+    color: var(--black);
+    font-size: 16px;
+    font-family: Arial, Helvectica, sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --maroon: maroon;
+    --black: black;
+    --red: red;
+}
+
+/**** This section before the media query is mobile phone view  ******/
+
+header h1 {
+    font-size: 150%;
+}
+.position_header_title {
+    background-color: var(--maroon);
+    padding: 12px 12px 12px 18px;
+    margin: 15px 0px 10px 0px;
+    border: 1px solid var(--black);
+    height: 23px;
+    width: 320px;
+    text-align: left;
+    font-size: 75%;
+}
+
+/* navigation and menu styling */
+nav {
+    width: 320px;
+    border-bottom: 10px;
+}
+nav ul {
+    width: 352px;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+}
+nav li {
+    background-color: var(--maroon);
+    color: var(--white);
+    padding: 14px;
+    text-align:  center;
+    border-bottom: 1px solid var(--black);
+    transition: background-color 0.2s;
+}
+nav li > a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 15px;
+}
+nav ul li:hover {
+    background-color: var(--black);
+}
+.active {
+    border-bottom: 2px solid var(--black);
+}
+
+.burger_menu {
+    position: absolute;
+    margin: 0px 10px 35px 35px;
+    font-size: 25px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    top: 20px;
+    right: 0;
+    color: var(--white);
+}
+#toggle:checked + #menu {
+    display: block;
+}
+#toggle {
+    display: none;
+}
+
+
+img{
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+/* Home page styling */
+.bio {
+    width: 230px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.bio h4{
+        font-size: 85%;
+        margin-bottom: 10px;
+        font-family: Abril;
+}
+.bio p {
+    font-size: 65%;
+    overflow-wrap: break-word;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bio span{
+    font-weight: bold;
+    font-size: 60%;
+}
+.band_pic{
+    padding-top: 1px;
+    margin-top: 1px;
+}
+.band_pic img{
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 2px;
+    margin-left: 38px;
+    max-width: 250px;
+    max-height: 250px;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}
+
+/* Live samples page styling */
+#video-list {
+    text-align: center;
+    margin-top: 10px;
+}
+iframe {
+    border: 1px solid var(--red);
+    font-size: 70%;
+    width: 270px;
+    height: 200px;
+}
+.position-videolist
+{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.item-video{
+    padding: 1%;
+}
+.ToFindOut{
+    padding-left: 20px;
+}
+.ToFindOut > p {
+    padding-top: 10px;
+    padding-left: 2px;
+    font-size: 60%;
+    text-align: left;
+    margin-left: 2px;
+}
+.ToFindOut a:link {
+  color: var(--maroon);
+}
+.ToFindOut a:visited {
+  color: var(--maroon);
+}
+
+/* Page Footer Styling */
+footer{
+    height: 150px;
+    padding-top: 20px;
+}
+footer ul{
+    text-align: center;
+}
+footer ul > li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 150%;
+}
+footer ul >li i{
+    font-size: 100%;
+    margin: 10%;
+    padding: 20%;
+    color: var(--black);
+}
+
+/* Testimonial Page Styling */
+.star-wrapper-pos{
+    width: 170px;
+    height: 90px;
+    padding: 1px 50px 0 50px;
+    background-color: var(--maroon);
+    max-width: 1020px;
+    margin: 0px auto;
+    margin-top: 10px;
+ }
+ .star-section h5{
+    color: var(--white);
+    font-size: 60%;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+}
+.star-section ol{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 70%;
+    margin-left: 2px;
+}
+.star-section li{
+    font-size: 90%;
+}
+.review_container_pos{
+    padding-left: 25px;
+    overflow: auto;
+    height: 300px;
+    width: 250px;
+}
+.test_title{
+    background-color: var(--maroon);
+    color: var(--white);
+    font-size: 90%;
+    max-width: 1020px;
+    margin-left: 25px;
+    padding-left: 5px;
+    width: 265px;
+    height: 20%;
+    margin-top: 5px;
+}
+.test_title h3{
+    font-size: 90%;
+}
+.user_review {
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.user_review > p{
+    font-style: italic;
+    overflow-wrap: break-word;
+    font-size: 80%;
+}
+.user_review footer {
+    font-size: 80%;
+    padding: 0;
+}
+.user_review footer > p span {
+    font-weight: bold;
+}
+.testpic {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    max-width: 180px;
+    max-height: 180px;
+    padding-bottom: 55px;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+.testpic img{
+    max-width: 230px;
+    max-height: 230px;
+}
+
+/* Contact page styling */
+.pos-bookingform {
+    margin-top: 10px;
+    margin-left: 16px;
+    color: var(--white);
+    background-color: rgba(60, 60, 70, 0.6);
+    width: 250px;
+    height: 310px;
+    padding: 20px;
+    border: 3px solid var(--maroon);
+}
+
+input[type=text],input[type=email],input[type=date],textarea{
+  background: transparent;
+  color: var(--white);
+  width: 140px;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: 1px solid var(--white);
+  border-radius: 2px;
+}
+.form_textarea > textarea {
+  height: 55px;
+}
+input[type=submit], input[type=reset] {
+    margin-top: 10px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: var(--maroon);
+    color: var(--white);
+    display: block;
+    font-size: 80%;
+    cursor: pointer;
+    float:left;
+    margin-right: 10px;
+}
+form label {
+    font-size: 70%;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+
+.form_fullname > label{
+  padding-right: 35px;
+}
+.form_email > label {
+  padding-right: 58px;
+}
+.form_date > label{
+  padding-right: 5px;
+}
+.form_textarea > textarea {
+  margin-left: 90px;
+  height: 35px;
+}
+/*.basepic */
+.basepic img {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    margin-left: 38px;
+    max-width: 180px;
+    max-height: 180px;
+}
+.basepic {
+   padding-left: 25px;
+}
+
+/* code below taken from external source and amended to apply to this sites gig event guide on home page
+  source site https://www.youtube.com/watch?v=iOrJ63dQ9eE    */
+.gig-wrapper {
+    padding-top: 10px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.gig-wrapper h3{
+    height: 40px;
+    font-size: 60%;
+}
+.gig {
+    height: 50px;
+    overflow: hidden;
+}
+.gig > div span {
+    font-size: 60%;
+    padding: 5px 15px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: block;
+}
+.gig div:first-child{
+    animation: slide 8s linear infinite;
+}
+/* this is the slide frames update */
+@keyframes slide{
+  0%{
+    margin-top: -240px
+  }
+  5%{
+    margin-top: -160px;
+
+  }
+  35%{
+    margin-top: -160px;
+  }
+  40%{
+    margin-top: -80px;
+  }
+  65%{
+    margin-top: -80px;
+  }
+  70%{
+    margin-top: 0;
+  }
+  99.99%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: -240px;
+  }
+}
