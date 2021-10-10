@@ -642,6 +642,7 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
     label.logo{
         width: 100px;
         font-size: 80%;
+        margin-left: 20px;
     }
     #menu{
       margin-right: 0;
@@ -679,8 +680,8 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
     }
     .band_pic img{
         
-        /*width: 25%;
-        height: 25%;
+        width: 20%;
+        height: 20%;
 
         float: left;
         margin-left: 0;
