@@ -711,7 +711,7 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
     .bio span{
       font-size: 80% !important;
     }
-    .gig-wrapper{
+    .gig{
         margin-left: 220px;   
      }
 
