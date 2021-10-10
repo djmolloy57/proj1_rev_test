@@ -734,7 +734,8 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
     }
 
     #video-list{
-      width: 1000px;
+      /*width: 1000px;*/
+      width: 600px;
       margin-left: 20px;
       padding-left: 5px;
       margin-right: 1px;
