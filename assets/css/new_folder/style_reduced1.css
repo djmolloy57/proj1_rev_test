@@ -756,7 +756,7 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
     .gig-wrapper{
        padding-top: 1px;
        /*padding-left: 195px;*/
-       margin-left: 195px;
+       margin-left: 245px;
        clear: both;
        padding-bottom: 50px;
     }
