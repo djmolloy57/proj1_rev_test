@@ -712,7 +712,7 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
       font-size: 80% !important;
     }
     .gig-wrapper{
-        margin-right: 20px;   
+        margin-left: 220px;   
      }
 
     .gig-wrapper > h3{
