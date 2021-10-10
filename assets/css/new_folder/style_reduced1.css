@@ -684,7 +684,7 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
         height: 22%;
 
         float: left;
-        margin-left: 0;
+        margin-left: 20px;
         margin-right: 0;*/
 
         /*display: none;*/
