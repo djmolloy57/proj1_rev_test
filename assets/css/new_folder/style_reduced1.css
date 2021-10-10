@@ -686,7 +686,7 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
         margin-left: 0;
         margin-right: 0;*/
 
-        display: none;
+        /*display: none;*/
 
 
     }
