@@ -767,8 +767,8 @@ and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
    }
    .position-videolist
    {
-       /*padding-left: 120px;
-       padding-right: 120px;*/
+       padding-left: 100px;
+       /*padding-right: 120px;*/
    }
    .item-video{
        display: inline;
