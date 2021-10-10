@@ -461,6 +461,66 @@ form label {
 
 }
 
+/* Media query Iphone 5 landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+and (-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
+    /* CSS here */
+
+
+  label.logo{
+   padding-left: 20px;
+   line-height: 10px;
+   height: 8px;
+
+   /*display: none !important;*/
+
+  }
+  .band_pic{
+    /*display: none !important;*/
+
+    margin-left: 20px;
+    margin-top: 20px;
+
+  }
+
+  .bio{
+     /*width: 500px !important;*/
+     margin-right: 100px;
+  }
+  .bio h4{
+    color: orange;
+    margin-right: 110px;
+  }
+  .bio  p{
+    font-size: 40% !important;
+  }
+
+  #menu{
+     margin: 0 !important;
+  }
+  nav{
+     max-height: 50px !important;
+      height: 50px !important;
+  }
+
+  nav ul {
+
+    float: right;
+    display: inline-block;
+  }
+  nav ul li {
+    background-color: green;
+    text-align: center;
+  }
+  nav ul li > a{
+
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 50%;
+  }
+
+}
+
 /* Media query Iphone 6/7/8 view  */
 @media screen and (min-width: 375px) and (max-width: 667px){
     
